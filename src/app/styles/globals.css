@@ -1,6 +1,14 @@
+@import 'reset.css';
+@import 'themes/light.css';
+@import 'themes/dark.css';
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-geist-sans: 'GeistSans', sans-serif;
+  --font-geist-mono: 'GeistMono', monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,7 +27,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-mono) ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,12 +1,29 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import { Roboto, Inter } from "next/font/google"; // Подключение Google Fonts
+import "./styles/globals.css";
+import { Header } from "src/components/Header/Header";
 
+// Подключаем шрифты из Google
+const roboto = Roboto({
+  subsets: ["latin", "cyrillic"], // Указываем нужные подмножества
+  weight: ["400", "700"], // Добавляем веса, если нужно
+  variable: "--font-roboto",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "600"],
+  variable: "--font-inter",
+});
+
+// Подключаем локальные шрифты
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -25,7 +42,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${roboto.variable} ${inter.variable} ${geistSans.variable} ${geistMono.variable}`}
+      >
+        <Header />
         {children}
       </body>
     </html>

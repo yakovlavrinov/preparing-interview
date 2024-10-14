@@ -1,0 +1,30 @@
+.nav {
+    height: 55px;
+    width: 100%;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+}
+
+.ul {
+    display: flex;
+    gap: 24px;
+  
+    
+    
+}
+.ul li {
+    transition: color .25s;
+  }
+  
+  .ul li:hover {
+    color: #751e25;
+  }
+  
+  .active {
+    color: #751e25;
+    /* font-weight: bold;
+    border-bottom: 2px solid #751e25; */
+  }

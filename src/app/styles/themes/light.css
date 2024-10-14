@@ -1,0 +1,17 @@
+.light_theme {
+    --bg-color: linear-gradient(
+        180deg,
+        rgba(245, 245, 245, 1) 0%,
+        rgba(240, 240, 240, 1) 56%,
+        rgba(235, 235, 235, 1) 100%
+    );
+
+    --nav-bg-color: #d1d0cd;
+    --border-bottom-color: 1px solid #ccc;
+
+    --text-main: #333333;
+    --text-secondary: #666666;
+
+    --background: #ebece9;
+    --foreground: #171717;
+}

@@ -1,0 +1,37 @@
+/* src/app/404.module.css или src/pages/404.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+  }
+  
+  .title {
+    font-size: 4rem;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+  }
+  
+  .link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #751e25;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .link:hover {
+    background-color: #9c252d;
+  }
+  
