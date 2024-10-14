@@ -13,5 +13,8 @@
     --text-secondary: #666666;
 
     --background: #ebece9;
-    --foreground: #171717;
+    --foreground: #dbdbdb;
+
+    --bg-card:#d5d5d5;
+    --bg-answers: #f0f0f0;;
 }

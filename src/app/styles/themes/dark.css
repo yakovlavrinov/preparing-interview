@@ -9,9 +9,12 @@
     --nav-bg-color: #262a29;
     --border-bottom-color: 1px solid #ccc;
 
-    --text-main: #333333;
+    --text-main: #adadad;
     --text-secondary: #666666;
 
     --background: #191a18;
-    --foreground: #ededed;
+    --foreground: #adadad;
+
+    --bg-card: #121212;
+    --bg-answers: #1c1c1c;
 }

@@ -3,11 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Занимает всю высоту экрана */
+    height: 100%;
     padding: 20px;
     margin: 30px;
-    background-color: #f4f4f4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: var(--bg-card); */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     border-radius: 12px;
 }
 
@@ -30,17 +30,18 @@
 
 .answer {
     padding: 16px;
-    background-color: #fff;
+    background-color: var(--bg-answers);
     border-radius: 8px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--foreground);
     text-align: center;
     cursor: pointer;
     transition: all 0.3s;
     font-size: 1.25rem;
+    color: var(--text-main)
 }
 
 .answer:hover {
-    background-color: #f0f0f0;
+   
     border-color: #999;
 }
 
