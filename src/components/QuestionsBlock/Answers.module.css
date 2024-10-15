@@ -1,0 +1,63 @@
+.answers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-answers);
+    border-radius: 8px;
+    padding: 16px;
+    transition: background-color 0.3s;
+}
+
+.answer {
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.answer:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.selected {
+    background-color: var(--bg-card);
+    outline: 2px solid yellow;
+    border-radius: 8px;
+}
+
+.customRadio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+.radioInput {
+    display: none;
+}
+
+.radioCircle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--foreground);
+    border-radius: 50%;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.radioInput:checked + .radioCircle {
+    background-color: yellow;
+    border-color: yellow;
+    box-shadow: 0 0 6px rgba(255, 255, 0, 0.8);
+}
+
+.customRadio:hover .radioCircle {
+    border-color: #adadad;
+    
+}
+

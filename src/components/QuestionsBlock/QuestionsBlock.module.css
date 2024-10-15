@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .questionsScale {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .dash {
+    position: relative;
+    width: 40px;
+    height: 8px;
+    background-color: grey;
+    transition: background-color 0.3s;
+  }
+  
+  .dash__true {
+    background-color: #00ff28;
+    box-shadow: 2px 1px 10px rgba(0, 255, 40, 0.6);
+  }
+  
+  .dash__false {
+    background-color: #ff003e;
+    box-shadow: 2px 1px 10px rgba(255, 0, 62, 0.6);
+  }
+
+  .dash__current::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    width: 50px;
+    height: 16px;
+    border: 2px solid yellow;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+    pointer-events: none; /* Чтобы элемент не блокировал клики */
+  }
+  
+  .questionBlock {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .answers {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .answer {
+    margin-bottom: 5px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  .button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
